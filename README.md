@@ -1,1 +1,1 @@
-# GuildedRose-java
+# CodingKata
