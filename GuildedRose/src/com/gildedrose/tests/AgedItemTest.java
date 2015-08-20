@@ -40,7 +40,7 @@ public class AgedItemTest {
     }
 
     @Test
-    public void updateQuality_SellinLessThanZero_QualityIncreaseByByTwo() {
+    public void updateQuality_SellinLessThanZero_QualityIncreaseByTwo() {
     	//Arrange
         Item[] items = new Item[] { new Item("Aged Brie", -1, 20) };
         GildedRose app = new GildedRose(items);
@@ -52,6 +52,21 @@ public class AgedItemTest {
         assertEquals("Aged Brie", items[0].name);
         assertEquals(-2, items[0].sellIn);
         assertEquals(22, items[0].quality);
+    }
+
+    @Test
+    public void updateQuality_QualityEqualsZero_QualityIncreaseByOne() {
+    	//Arrange
+        Item[] items = new Item[] { new Item("Aged Brie", 10, 0) };
+        GildedRose app = new GildedRose(items);
+        
+        //Act
+        app.updateQuality();
+        
+        //Assert
+        assertEquals("Aged Brie", items[0].name);
+        assertEquals(9, items[0].sellIn);
+        assertEquals(1, items[0].quality);
     }
 
     @Test

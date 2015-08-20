@@ -69,4 +69,19 @@ public class RegularItemTest {
         assertEquals(0, items[0].quality);
     }
 
+    @Test
+    public void updateQuality_QualityEqualsFifty_QualityDecreaseByOne() {
+    	//Arrange
+        Item[] items = new Item[] { new Item("+5 Dexterity Vest", 10, 50) };
+        GildedRose app = new GildedRose(items);
+        
+        //Act
+        app.updateQuality();
+        
+        //Assert
+        assertEquals("+5 Dexterity Vest", items[0].name);
+        assertEquals(9, items[0].sellIn);
+        assertEquals(49, items[0].quality);
+    }
+
 }
