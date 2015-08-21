@@ -12,13 +12,13 @@ public class AgedItem extends ItemDecorator {
 	@Override
 	protected void updateQuality()
 	{
-		if (super.IsSellInEnded())
+		if (this.IsSellInEnded())
 		{
-			super.increaseQualityTwice();
+			this.increaseQualityTwice();
 		}
 		else
 		{
-			super.decreaseQualityOnce();
+			this.increaseQualityOnce();
 		}
 	}
 
