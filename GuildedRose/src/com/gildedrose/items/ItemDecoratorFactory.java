@@ -20,6 +20,10 @@ public class ItemDecoratorFactory {
 		{
 			return new ConjuredItem(itemToDecorate);
 		}
+		else if (itemToDecorate.name.contains("Suspicious"))
+		{
+			return new SuspiciousItem(itemToDecorate);
+		}
 		else
 		{
 			return new RegularItem(itemToDecorate);
