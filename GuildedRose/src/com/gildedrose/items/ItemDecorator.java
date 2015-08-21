@@ -89,6 +89,12 @@ public abstract class ItemDecorator {
 		if (this.itemToDecorate.quality < MIN_QUALITY) this.itemToDecorate.quality = MIN_QUALITY;
 	}
 	
+	protected void decreaseQualityQuarce()
+	{
+		this.itemToDecorate.quality -= 4;
+		if (this.itemToDecorate.quality < MIN_QUALITY) this.itemToDecorate.quality = MIN_QUALITY;
+	}
+	
 	protected void increaseQualityOnce()
 	{
 		this.itemToDecorate.quality += 1;

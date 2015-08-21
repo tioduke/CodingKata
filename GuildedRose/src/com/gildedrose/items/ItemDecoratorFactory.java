@@ -16,6 +16,10 @@ public class ItemDecoratorFactory {
 		{
 			return new BackstagePassItem(itemToDecorate);
 		}
+		else if (itemToDecorate.name.contains("Conjured"))
+		{
+			return new ConjuredItem(itemToDecorate);
+		}
 		else
 		{
 			return new RegularItem(itemToDecorate);
