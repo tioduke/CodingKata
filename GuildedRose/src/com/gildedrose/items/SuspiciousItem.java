@@ -24,7 +24,7 @@ public class SuspiciousItem extends ItemDecorator {
 			}		
 		}
 		else
-        {
+		{
 			if (this.IsSellInEnded())
 			{
 				this.decreaseQualityQuarce();
@@ -33,7 +33,7 @@ public class SuspiciousItem extends ItemDecorator {
 			{
 				this.decreaseQualityTwice();
 			}
-        }
+		}
 	}
 
 }

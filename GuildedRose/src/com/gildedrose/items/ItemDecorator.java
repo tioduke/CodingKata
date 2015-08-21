@@ -47,22 +47,22 @@ public abstract class ItemDecorator {
 	}
 
 	// Read-only properties
-    protected boolean IsSellInEnded()
-    {
-        return this.itemToDecorate.sellIn <= 0;
-    }
-
-    protected boolean IsSellInEvenNumber()
-    {
-        return this.itemToDecorate.sellIn % 2 == 0;
-    }
-
-    protected boolean IsSellInOddNumber()
-    {
-        return !this.IsSellInEvenNumber();
-    }
+	protected boolean IsSellInEnded()
+	{
+	    return this.itemToDecorate.sellIn <= 0;
+	}
 	
-    // Public methods
+	protected boolean IsSellInEvenNumber()
+	{
+	    return this.itemToDecorate.sellIn % 2 == 0;
+	}
+	
+	protected boolean IsSellInOddNumber()
+	{
+	    return !this.IsSellInEvenNumber();
+	}
+	
+	// Public methods
 	public void update()
 	{
 		this.updateQuality();
@@ -76,7 +76,7 @@ public abstract class ItemDecorator {
 	{
 		this.itemToDecorate.sellIn--;
 	}
-
+	
 	protected void decreaseQualityOnce()
 	{
 		this.itemToDecorate.quality -= 1;
