@@ -59,7 +59,7 @@ public abstract class ItemDecorator {
 	
 	protected boolean IsSellInOddNumber()
 	{
-		return !this.IsSellInEvenNumber();
+		return this.itemToDecorate.sellIn % 2 != 0;
 	}
 	
 	// Public methods
