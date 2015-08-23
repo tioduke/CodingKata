@@ -1,5 +1,7 @@
 using Xunit;
 
+using GildedRose.Items;
+
 namespace GildedRose.Tests
 {
 	public class AgedItemTest
