@@ -12,9 +12,9 @@ public class SuspiciousItem extends ItemDecorator {
 	@Override
 	protected void updateQuality()
 	{
-		if (this.IsSellInOddNumber())
+		if (this.isSellInOddNumber())
 		{
-			if (this.IsSellInEnded())
+			if (this.isSellInEnded())
 			{
 				this.decreaseQualityTwice();
 			}
@@ -25,7 +25,7 @@ public class SuspiciousItem extends ItemDecorator {
 		}
 		else
 		{
-			if (this.IsSellInEnded())
+			if (this.isSellInEnded())
 			{
 				this.decreaseQualityQuarce();
 			}

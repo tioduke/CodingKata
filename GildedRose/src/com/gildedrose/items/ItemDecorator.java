@@ -47,17 +47,17 @@ public abstract class ItemDecorator {
 	}
 
 	// Read-only properties
-	protected boolean IsSellInEnded()
+	protected boolean isSellInEnded()
 	{
 		return this.itemToDecorate.sellIn <= 0;
 	}
 	
-	protected boolean IsSellInEvenNumber()
+	protected boolean isSellInEvenNumber()
 	{
 		return this.itemToDecorate.sellIn % 2 == 0;
 	}
 	
-	protected boolean IsSellInOddNumber()
+	protected boolean isSellInOddNumber()
 	{
 		return this.itemToDecorate.sellIn % 2 != 0;
 	}

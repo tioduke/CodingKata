@@ -12,7 +12,7 @@ public class RegularItem extends ItemDecorator {
 	@Override
 	protected void updateQuality()
 	{
-		if (this.IsSellInEnded())
+		if (this.isSellInEnded())
 		{
 			this.decreaseQualityTwice();
 		}
