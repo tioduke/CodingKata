@@ -5,7 +5,7 @@ namespace GildedRose.Items
 	
 		// Constructors
 		internal AgedItem(Item itemToDecorate) : base(itemToDecorate) { }
-	
+		
 		// Protected methods
 		protected override void UpdateQuality()
 		{
