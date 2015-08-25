@@ -8,9 +8,9 @@ namespace GildedRose.Items
         // Protected methods
         protected override void UpdateQuality()
         {
-            if (this.IsSellInOddNumber())
+            if (this.SellInOddNumber)
             {
-                if (this.IsSellInEnded())
+                if (this.SellInEnded)
                 {
                     this.DecreaseQualityTwice();
                 }
@@ -21,7 +21,7 @@ namespace GildedRose.Items
             }
             else
             {
-                if (this.IsSellInEnded())
+                if (this.SellInEnded)
                 {
                     this.DecreaseQualityQuarce();
                 }

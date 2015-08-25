@@ -29,7 +29,6 @@ namespace GildedRose.Items
             }
         }
         
-        
         public int SellIn
         {
             get
@@ -54,20 +53,26 @@ namespace GildedRose.Items
             }
         }
     
-        // Read-only 'properties'
-        protected bool IsSellInEnded()
+        // Read-only properties
+        protected bool SellInEnded
         {
-            return this.SellIn <= 0;
+            get {
+                return this.SellIn <= 0;
+            }
         }
         
-        protected bool IsSellInEvenNumber()
+        protected bool SellInEvenNumber
         {
-            return this.SellIn % 2 == 0;
+            get {
+                return this.SellIn % 2 == 0;
+            }
         }
         
-        protected bool IsSellInOddNumber()
+        protected bool SellInOddNumber
         {
-            return this.SellIn % 2 != 0;
+            get {
+                return this.SellIn % 2 != 0;
+            }
         }
         
         // Public methods
