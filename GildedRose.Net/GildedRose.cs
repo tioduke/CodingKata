@@ -16,7 +16,7 @@ namespace GildedRose
         {
             for (var i = 0; i < Items.Count; i++)
             {
-                ItemDecorator decoratedItem = ItemDecoratorFactory.getInstance(Items[i]);
+                ItemDecorator decoratedItem = ItemDecoratorFactory.CreateInstance(Items[i]);
                 decoratedItem.Update();
             }
         }

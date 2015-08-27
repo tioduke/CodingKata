@@ -2,7 +2,7 @@ namespace GildedRose.Items
 {
     public class ItemDecoratorFactory
     {
-        static public ItemDecorator getInstance(Item itemToDecorate)
+        static public ItemDecorator CreateInstance(Item itemToDecorate)
         {
             if (itemToDecorate.Name.Contains("Aged"))
             {
