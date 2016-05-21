@@ -1,30 +1,36 @@
 {
   "version": "1.0.0-*",
   "description": "GildedRose Kata .Net version",
-  "tags": [""],
-  "projectUrl": "",
-  "licenseUrl": "",
-
-  "dependencies": {
-    "xunit": "2.1.0",
-    "xunit.runner.dnx": "2.1.0-rc1-build204"
+  "buildOptions": {
+    "emitEntryPoint": true
   },
 
-  "commands": {
-    "run": "run",
-    "test": "xunit.runner.dnx -parallel none"
+  "dependencies": {
+    "dotnet-test-xunit": "1.0.0-rc2-*",
+    "Microsoft.NETCore.App": {
+      "version": "1.0.0-rc2-3002702",
+      "type": "platform"
+    },
+    "xunit": "2.1.0-rc2-*"
   },
 
   "frameworks": {
-    "dnx451": {},
-    "dnxcore50": {
-      "dependencies": {
-        "Microsoft.CSharp": "4.0.1-beta-23225",
-        "System.Collections": "4.0.11-rc1-final",
-        "System.Console": "4.0.0-rc1-final",
-        "System.Linq": "4.0.1-rc1-final",
-        "System.Threading": "4.0.11-rc1-final"
-      }
+    "netcoreapp1.0": {
+      "imports": [
+        "dotnet5.6",
+        "dnxcore50",
+        "portable-net45+win8"
+      ]
     }
+  },
+
+  "testRunner": "xunit",
+
+  "commands": {
+    "test": "xunit.runner.dnx -parallel none"
+  },
+
+  "tooling": {
+    "defaultNamespace": "GildedRose.Net"
   }
 }
