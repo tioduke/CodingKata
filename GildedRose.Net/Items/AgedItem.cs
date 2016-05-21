@@ -1,4 +1,4 @@
-namespace GildedRose.Items
+namespace GildedRose.Net.Items
 {
     public class AgedItem : ItemDecorator
     {

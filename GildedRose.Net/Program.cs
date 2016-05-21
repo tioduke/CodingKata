@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 
-using GildedRose.Items;
+using GildedRose.Net.Items;
 
-namespace GildedRose
+namespace GildedRose.Net
 {
     class Program
     {

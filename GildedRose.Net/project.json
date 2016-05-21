@@ -26,10 +26,6 @@
 
   "testRunner": "xunit",
 
-  "commands": {
-    "test": "xunit.runner.dnx -parallel none"
-  },
-
   "tooling": {
     "defaultNamespace": "GildedRose.Net"
   }

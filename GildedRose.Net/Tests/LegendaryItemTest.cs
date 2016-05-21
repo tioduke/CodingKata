@@ -1,8 +1,8 @@
 using Xunit;
 
-using GildedRose.Items;
+using GildedRose.Net.Items;
 
-namespace GildedRose.Tests
+namespace GildedRose.Net.Tests
 {
     public class LegendaryItemTest
     {
