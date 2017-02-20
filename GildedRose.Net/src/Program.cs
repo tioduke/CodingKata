@@ -4,7 +4,7 @@ using GildedRose.Net.Items;
 
 namespace GildedRose.Net
 {
-    class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
