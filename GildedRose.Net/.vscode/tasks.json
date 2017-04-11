@@ -8,7 +8,7 @@
             "taskName": "build",
             "suppressTaskName": true,
             "args": [
-                "dotnet build \"${workspaceRoot}/test\""
+                "dotnet build \"${workspaceRoot}/../GildedRose.Net.Tests\""
             ],
             "isBuildCommand": true,
             "problemMatcher": "$msCompile"
@@ -17,14 +17,14 @@
             "taskName": "run",
             "suppressTaskName": true,
             "args": [
-                "dotnet run --project \"${workspaceRoot}/src/GildedRose.Net.csproj\""
+                "dotnet run --project \"${workspaceRoot}/GildedRose.Net.csproj\""
             ]
         },
         {
             "taskName": "test",
             "suppressTaskName": true,
             "args": [ 
-                "dotnet test \"${workspaceRoot}/test/GildedRose.Net.Tests.csproj\""
+                "dotnet test \"${workspaceRoot}/../GildedRose.Net.Tests/GildedRose.Net.Tests.csproj\""
             ],
             "isTestCommand": true
         }
