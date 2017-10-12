@@ -10,12 +10,6 @@
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false
-        },
-        {
-            "name": ".NET Core Attach",
-            "type": "coreclr",
-            "request": "attach",
-            "processName": "<example>"
         }
     ]
 }
