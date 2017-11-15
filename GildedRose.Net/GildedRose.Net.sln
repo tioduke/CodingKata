@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GildedRose.Net.Tests", "GildedRose.Net.Tests.csproj", "{55956486-D3D1-4661-9A9F-EACDBC78013A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GildedRose.Net", "GildedRose.Net.csproj", "{47DAC5CB-DD5D-4487-8B05-37BFB0B301EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GildedRose.Net", "..\GildedRose.Net\GildedRose.Net.csproj", "{47DAC5CB-DD5D-4487-8B05-37BFB0B301EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GildedRose.Net.Tests", "..\GildedRose.Net.Tests\GildedRose.Net.Tests.csproj", "{55956486-D3D1-4661-9A9F-EACDBC78013A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
