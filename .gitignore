@@ -5,6 +5,9 @@ bin/
 # ignore all target directories
 target/
 
+# ignore all .ionide directories
+.ionide/
+
 # ignore all .metadata directories
 .metadata/
 
