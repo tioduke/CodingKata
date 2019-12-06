@@ -3,15 +3,45 @@
     "tasks": [
         {
             "label": "build",
-            "type": "shell",
-            "command": "dotnet build \"${workspaceFolder}/../GildedRose.Net.Tests\"",
-            "group": "build",
-            "problemMatcher": [ "$msCompile" ]
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/GildedRose.Net.sln",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "clean",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "clean",
+                "${workspaceFolder}/GildedRose.Net.sln",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "test",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "test",
+                "${workspaceFolder}/GildedRose.Net.Tests/GildedRose.Net.Tests.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "group": "test",
+            "problemMatcher": "$msCompile"
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "dotnet run --project \"${workspaceRoot}/GildedRose.Net.csproj\"",
+            "command": "dotnet run --project \"${workspaceFolder}/GildedRose.Net/GildedRose.Net.csproj\"",
             "problemMatcher": []
         }
     ]

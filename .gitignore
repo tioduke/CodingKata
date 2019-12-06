@@ -8,6 +8,9 @@ target/
 # ignore all .ionide directories
 .ionide/
 
+# ignore solution explorer templates
+solution-explorer
+
 # ignore all .metadata directories
 .metadata/
 
