@@ -6,9 +6,10 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/bin/Debug/netcoreapp2.0/GildedRose.Net.dll",
+            "program": "${workspaceFolder}/GildedRose.Net/bin/Debug/netcoreapp2.2/GildedRose.Net.dll",
             "args": [],
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/GildedRose.Net",
+            "console": "internalConsole",
             "stopAtEntry": false
         },
         {
