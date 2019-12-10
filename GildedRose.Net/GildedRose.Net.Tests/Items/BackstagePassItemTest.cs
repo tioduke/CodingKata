@@ -3,7 +3,7 @@ using Xunit.Categories;
 
 using GildedRose.Net.Items;
 
-namespace GildedRose.Net.Tests
+namespace GildedRose.Net.Tests.Items
 {
     public class BackstagePassItemTest
     {
