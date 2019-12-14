@@ -9,7 +9,11 @@ target/
 .ionide/
 
 # ignore solution explorer templates
-solution-explorer
+solution-explorer/
+
+# ignore code coverage output data
+coverage/
+lcov.info
 
 # ignore all .metadata directories
 .metadata/

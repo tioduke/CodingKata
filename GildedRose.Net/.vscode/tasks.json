@@ -33,6 +33,9 @@
                 "test",
                 "${workspaceFolder}/GildedRose.Net.Tests/GildedRose.Net.Tests.csproj",
                 "/property:GenerateFullPaths=true",
+                "/property:CollectCoverage=true",
+                "/property:CoverletOutputFormat=lcov",
+                "/property:CoverletOutput=${workspaceFolder}/coverage/lcov.info",
                 "/consoleloggerparameters:NoSummary"
             ],
             "group": "test",
