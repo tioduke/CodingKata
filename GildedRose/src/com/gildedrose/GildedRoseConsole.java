@@ -5,7 +5,7 @@ import com.gildedrose.items.*;
 public class GildedRoseConsole {
     public static void main(String[] args) {
         System.out.println("OMGHAI!");
-
+        
         Item[] items = new Item[] {
                 new Item("+5 Dexterity Vest", 10, 20), //
                 new Item("Aged Brie", 2, 0), //
